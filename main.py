@@ -61,6 +61,7 @@ if uploaded_file is not None:
         # recommendation
         indices = recommend(features, feature_list)
         # display the results
+        st.header('Your Top 5 Recommendations are:')
         col1, col2, col3, col4, col5 = st.columns(5)
         with col1:
             image1 = Image.open(filenames[indices[0][0]])
